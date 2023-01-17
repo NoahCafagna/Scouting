@@ -1,10 +1,12 @@
 var config_data = `
 {
+	"enable_google_sheets": "true",
   "title": "Scouting PASS 2023",
   "page_title": "Charged Up",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
+	  "gsCol": "scouter",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -12,13 +14,15 @@ var config_data = `
       "required": "true"
     },
     { "name": "Event",
+	"gsCol": "event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "2022miroc",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
+	"gsCol": "match level",
       "code": "l",
       "type": "level",
       "choices": {
@@ -30,6 +34,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
+	"gsCol": "match #",
       "code": "m",
       "type": "match",
       "min": 1,
@@ -37,6 +42,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Robot",
+	"gsCol": "robot",
       "code": "r",
       "type": "robot",
       "choices": {
@@ -50,12 +56,14 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
+	"gsCol": "team #",
       "code": "t",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
+	"gsCol": "start position",
       "code": "as",
       "type": "field_image",
       "filename": "2023/field_image.png"
@@ -63,34 +71,42 @@ var config_data = `
   ],
   "auton": [
     { "name": "Mobility?",
+	"gsCol": "mobility",
       "code": "am",
       "type": "bool"
     },
     { "name": "High Cube Scored",
+	"gsCol": "high cube scored",
       "code": "auh",
       "type": "counter"
     },
     { "name": "Medium Cube Scored",
+	"gsCol": "medium cube scored",
       "code": "aum",
       "type": "counter"
     },
     { "name": "Low Cube Scored",
+	"gsCol": "low cube scored",
       "code": "aul",
       "type": "counter"
     },
     { "name": "High Cone Scored",
+	"gsCol": "high cone scored",
       "code": "aoh",
       "type": "counter"
     },
     { "name": "Medium Cone Scored",
+	"gsCol": "medium cone scored",
       "code": "aom",
       "type": "counter"
     },
     { "name": "Low Cone Scored",
+	"gsCol": "low cone scored",
       "code": "aol",
       "type": "counter"
     },
     { "name": "Docked",
+	"gsCol": "dock",
       "code": "ad",
       "type":"radio",
       "choices": {
@@ -104,46 +120,57 @@ var config_data = `
   ],
   "teleop": [
     { "name": "Cycle Timer",
+	"gsCol": "cycle timer",
       "code": "tct",
       "type": "cycle"
     },
     { "name": "High Cube Scored",
+	"gsCol": "high cube scored",
       "code": "tuh",
       "type": "counter"
     },
     { "name": "Medium Cube Scored",
+	"gsCol": "medium cube scored",
       "code": "tum",
       "type": "counter"
     },
     { "name": "Low Cube Scored",
+	"gsCol": "low cube scored",
       "code": "tul",
       "type": "counter"
     },
     { "name": "High Cone Scored",
+	"gsCol": "high cone scored",
       "code": "toh",
       "type": "counter"
     },
     { "name": "Medium Cone Scored",
+	"gsCol": "medium cone scored",
       "code": "tom",
       "type": "counter"
     },
     { "name": "Low Cone Scored",
+	"gsCol": "low cone scored",
       "code": "tol",
       "type": "counter"
     },
     { "name": "Feeder Count",
+	"gsCol": "feeder count",
       "code": "tfc",
       "type": "counter"
     },
     { "name": "Was Defended",
+	"gsCol": "was defended",
       "code": "wd",
       "type": "bool"
     },
     { "name": "Smart Placement (creates Links)",
+	"gsCol": "smart placement",
       "code": "lnk",
       "type": "bool"
     },
     { "name": "Cargo Intake From",
+	"gsCol": "cargo intake from",
       "code": "cif",
       "type": "radio",
       "choices": {
@@ -157,10 +184,12 @@ var config_data = `
   ],
   "endgame": [
     { "name": "Docking Timer",
+	"gsCol": "docking timer",
       "code": "dt",
       "type": "timer"
     },
     { "name": "Final Status",
+	"gsCol": "final status",
       "code": "fs",
       "type":"radio",
       "choices": {
@@ -173,12 +202,14 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "# of alliance bots docked/engaged",
+	"gsCol": "# of alliance robots docked/engaged",
       "code": "cn",
       "type": "counter"
     }
   ],
   "postmatch": [
     { "name": "Driver Skill",
+	"gsCol": "driver skill",
       "code": "ds",
       "type": "radio",
       "choices": {
@@ -190,10 +221,12 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Links Scored",
+	"gsCol": "links scored",
       "code": "ls",
       "type": "counter"
     },
     { "name": "Defense Rating",
+	"gsCol": "defense rating",
       "code": "dr",
       "type": "radio",
       "choices": {
@@ -206,10 +239,12 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Swerve drive?",
+	"gsCol": "swerve drive",
       "code": "sd",
       "type": "bool"
     },
     { "name": "Speed Rating",
+	"gsCol": "speed rating",
       "code": "sr",
       "type": "radio",
       "choices": {
@@ -222,25 +257,30 @@ var config_data = `
       "defaultValue":"3"
     },
     { "name": "Died/Tipped",
+	"gsCol": "died/tipped",
       "code": "d",
       "type": "bool"
     },
     { "name": "Avoided coopertition",
+	"gsCol": "avoided coopertition",
       "code": "coo",
       "type": "bool"
     },
     { "name": "Make good alliance partner?",
+	"gsCol": "good alliance partner",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
     },
     { "name": "Comments",
+	"gsCol": "comments",
       "code": "co",
       "type": "text",
       "size": 15,
       "maxSize": 50
     },
     { "name": "Confidence Rating",
+	"gsCol": "confidence rating",
       "code": "cnf",
       "type": "radio",
       "choices": {
