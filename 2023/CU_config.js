@@ -1,7 +1,6 @@
 var config_data = `
 {
-  "enable_google_sheets": "true",
-  "title": "818 Scouting",
+  "title": "818 Scouting v1",
   "page_title": "Charged Up",
   "checkboxAs": "10",
   "prematch": [
@@ -29,7 +28,7 @@ var config_data = `
         "f": "Finals"
       },
       "defaultValue": "qm",
-      "required": "false"
+      "required": "true"
     },
     { "name": "Match #",
       "code": "m",
@@ -49,7 +48,7 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-      "required":"false"
+      "required":"true"
     },
     { "name": "Team #",
       "code": "t",
