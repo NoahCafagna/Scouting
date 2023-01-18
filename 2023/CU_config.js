@@ -22,7 +22,7 @@ var config_data = `
       "disabled": "true"
     },
     { "name": "Match Level",
-	"gsCol": "match level",
+	"gsCol": "matchLevel",
       "code": "l",
       "type": "level",
       "choices": {
@@ -34,7 +34,7 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
-	"gsCol": "match #",
+	"gsCol": "matchNum",
       "code": "m",
       "type": "match",
       "min": 1,
@@ -56,14 +56,14 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
-	"gsCol": "team #",
+	"gsCol": "teamNum",
       "code": "t",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
-	"gsCol": "start position",
+	"gsCol": "startPos",
       "code": "as",
       "type": "field_image",
       "filename": "2023/field_image.png"
@@ -76,32 +76,32 @@ var config_data = `
       "type": "bool"
     },
     { "name": "High Cube Scored",
-	"gsCol": "high cube scored",
+	"gsCol": "HCS",
       "code": "auh",
       "type": "counter"
     },
     { "name": "Medium Cube Scored",
-	"gsCol": "medium cube scored",
+	"gsCol": "MCS",
       "code": "aum",
       "type": "counter"
     },
     { "name": "Low Cube Scored",
-	"gsCol": "low cube scored",
+	"gsCol": "LCS",
       "code": "aul",
       "type": "counter"
     },
     { "name": "High Cone Scored",
-	"gsCol": "high cone scored",
+	"gsCol": "HCNS",
       "code": "aoh",
       "type": "counter"
     },
     { "name": "Medium Cone Scored",
-	"gsCol": "medium cone scored",
+	"gsCol": "MCNS",
       "code": "aom",
       "type": "counter"
     },
     { "name": "Low Cone Scored",
-	"gsCol": "low cone scored",
+	"gsCol": "LCNS",
       "code": "aol",
       "type": "counter"
     },
@@ -120,57 +120,57 @@ var config_data = `
   ],
   "teleop": [
     { "name": "Cycle Timer",
-	"gsCol": "cycle timer",
+	"gsCol": "cycleTimer",
       "code": "tct",
       "type": "cycle"
     },
     { "name": "High Cube Scored",
-	"gsCol": "high cube scored",
+	"gsCol": "HCST",
       "code": "tuh",
       "type": "counter"
     },
     { "name": "Medium Cube Scored",
-	"gsCol": "medium cube scored",
+	"gsCol": "MCST",
       "code": "tum",
       "type": "counter"
     },
     { "name": "Low Cube Scored",
-	"gsCol": "low cube scored",
+	"gsCol": "LCST",
       "code": "tul",
       "type": "counter"
     },
     { "name": "High Cone Scored",
-	"gsCol": "high cone scored",
+	"gsCol": "HCNST",
       "code": "toh",
       "type": "counter"
     },
     { "name": "Medium Cone Scored",
-	"gsCol": "medium cone scored",
+	"gsCol": "MCNST",
       "code": "tom",
       "type": "counter"
     },
     { "name": "Low Cone Scored",
-	"gsCol": "low cone scored",
+	"gsCol": "LCNST",
       "code": "tol",
       "type": "counter"
     },
     { "name": "Feeder Count",
-	"gsCol": "feeder count",
+	"gsCol": "feederCount",
       "code": "tfc",
       "type": "counter"
     },
     { "name": "Was Defended",
-	"gsCol": "was defended",
+	"gsCol": "wasDefended",
       "code": "wd",
       "type": "bool"
     },
     { "name": "Smart Placement (creates Links)",
-	"gsCol": "smart placement",
+	"gsCol": "smartPlacement",
       "code": "lnk",
       "type": "bool"
     },
     { "name": "Cargo Intake From",
-	"gsCol": "cargo intake from",
+	"gsCol": "cargoIntake",
       "code": "cif",
       "type": "radio",
       "choices": {
@@ -184,12 +184,12 @@ var config_data = `
   ],
   "endgame": [
     { "name": "Docking Timer",
-	"gsCol": "docking timer",
+	"gsCol": "dockingTimer",
       "code": "dt",
       "type": "timer"
     },
     { "name": "Final Status",
-	"gsCol": "final status",
+	"gsCol": "finalStatus",
       "code": "fs",
       "type":"radio",
       "choices": {
@@ -202,14 +202,14 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "# of alliance bots docked/engaged",
-	"gsCol": "# of alliance robots docked/engaged",
+	"gsCol": "botsEngaged",
       "code": "cn",
       "type": "counter"
     }
   ],
   "postmatch": [
     { "name": "Driver Skill",
-	"gsCol": "driver skill",
+	"gsCol": "driverSkill",
       "code": "ds",
       "type": "radio",
       "choices": {
@@ -221,12 +221,12 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Links Scored",
-	"gsCol": "links scored",
+	"gsCol": "linkScored",
       "code": "ls",
       "type": "counter"
     },
     { "name": "Defense Rating",
-	"gsCol": "defense rating",
+	"gsCol": "defenseRating",
       "code": "dr",
       "type": "radio",
       "choices": {
@@ -239,12 +239,12 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Swerve drive?",
-	"gsCol": "swerve drive",
+	"gsCol": "swerveDrive",
       "code": "sd",
       "type": "bool"
     },
     { "name": "Speed Rating",
-	"gsCol": "speed rating",
+	"gsCol": "speedRating",
       "code": "sr",
       "type": "radio",
       "choices": {
@@ -257,17 +257,17 @@ var config_data = `
       "defaultValue":"3"
     },
     { "name": "Died/Tipped",
-	"gsCol": "died/tipped",
+	"gsCol": "tippedBot",
       "code": "d",
       "type": "bool"
     },
     { "name": "Avoided coopertition",
-	"gsCol": "avoided coopertition",
+	"gsCol": "noCoopertition",
       "code": "coo",
       "type": "bool"
     },
     { "name": "Make good alliance partner?",
-	"gsCol": "good alliance partner",
+	"gsCol": "goodPartner",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
@@ -280,7 +280,7 @@ var config_data = `
       "maxSize": 50
     },
     { "name": "Confidence Rating",
-	"gsCol": "confidence rating",
+	"gsCol": "confidenceRating",
       "code": "cnf",
       "type": "radio",
       "choices": {
