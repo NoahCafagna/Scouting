@@ -1,5 +1,6 @@
 var config_data = `
 {
+  "enable_google_sheets": "true",
   "title": "818 Scouting v1",
   "page_title": "Charged Up",
   "checkboxAs": "10",
