@@ -1,6 +1,6 @@
 var config_data = `
 {
-  "title": "Scouting PASS 2023",
+  "title": "Scouting PASS 2023 V1",
   "page_title": "Charged Up",
   "checkboxAs": "10",
   "enable_google_sheets": "true",
