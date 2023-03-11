@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022miroc",
+      "defaultValue": "2023mike2",
       "required": "true",
       "disabled": "true"
     },
