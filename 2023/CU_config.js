@@ -219,9 +219,13 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
-    { "name": "Tippy<br>(almost tipped over)",
+    { "name": "Game Result?",
       "code": "tip",
-      "type": "bool"
+      "type": "radio"
+        "choices": {
+        "w": "Win",
+        "l": "Loss",
+        "t": "Tie"
     },
     { "name": "Activation Bonus?",
       "code": "dc",
