@@ -223,12 +223,11 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Cones (>2)",
+    { "name": "Activation Bonus?",
       "code": "dc",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
+    { "name": "Sustanability Bonus?",
       "code": "all",
       "type": "bool"
     },
