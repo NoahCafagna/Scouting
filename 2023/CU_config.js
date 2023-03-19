@@ -219,13 +219,16 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
-    { "name": "Game Result?",
+    { "name": "Game Result?,
       "code": "tip",
       "type": "radio",
-        "choices": {
+      "choices": {
         "w": "Win",
+        "t": "Tie",
         "l": "Loss",
-        "t": "Tie"
+        "x": "Do Not Select"
+      },
+      "defaultValue": "x"
     },
     { "name": "Activation Bonus?",
       "code": "dc",
