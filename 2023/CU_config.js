@@ -221,7 +221,7 @@ var config_data = `
     },
     { "name": "Game Result?",
       "code": "tip",
-      "type": "radio"
+      "type": "radio",
         "choices": {
         "w": "Win",
         "l": "Loss",
