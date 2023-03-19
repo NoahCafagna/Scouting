@@ -219,7 +219,7 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
-    { "name": "Game Result?,
+    { "name": "Game Result?",
       "code": "tip",
       "type": "radio",
       "choices": {
