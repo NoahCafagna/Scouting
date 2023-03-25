@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023mitry",
+      "defaultValue": "2023mm",
       "required": "true",
       "disabled": "true"
     },
