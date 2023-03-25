@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023mike2",
+      "defaultValue": "2023mitry",
       "required": "true",
       "disabled": "true"
     },
