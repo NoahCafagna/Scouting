@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023mitry",
+      "defaultValue": "2023mimcc",
       "required": "true",
       "disabled": "true"
     },
@@ -226,7 +226,7 @@ var config_data = `
         "w": "Win",
         "t": "Tie",
         "l": "Loss",
-        "x": "Do Not Select"
+        "x": "No Show"
       },
       "defaultValue": "x"
     },
