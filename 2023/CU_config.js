@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023micmp4",
+      "defaultValue": "2023cur",
       "required": "true",
       "disabled": "true"
     },
@@ -116,7 +116,7 @@ var config_data = `
       "shape": "circle 12 black red true",
       "cycleTimer": "tct"
     },
-    { "name": "Feeder Count<br>(Fed another bot)",
+    { "name": "Supercharged<br>Node count<br>(Put 2nd valid<br>piece in node)",
       "code": "tfc",
       "type": "counter",
       "cycleTimer": "tct"
