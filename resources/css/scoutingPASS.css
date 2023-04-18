@@ -2,8 +2,8 @@
     font-family: 'Falcons';
     font-style: normal;
     font-weight: normal;
-    src: local('Falcons'), url('../fonts/alex.woff') format('woff');
-    src: url("../fonts/alexisv3.ttf") format('truetype');
+    src: local('Falcons'), url('../fonts/FalconsFont.woff') format('woff');
+    src: url("../fonts/FalconsFont.ttf") format('truetype');
 }
 
 html, body{
