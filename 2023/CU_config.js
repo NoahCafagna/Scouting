@@ -2,7 +2,6 @@ var config_data = `
 {
   "title": "Scouting PASS 2023",
   "page_title": "Team 818 Scouting Pass",
-  "team_logo": "2023/Solid Armadillo Logo.png", 
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
